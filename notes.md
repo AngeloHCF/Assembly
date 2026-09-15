@@ -6,9 +6,10 @@ sudo = "superuser do" - runs a command with administrator/root privileges
 apt = advanced package tool - ubuntu's package manager for installing, updating, and removing software
 
 1. wsl --install
-2. run wsl
+2. run wsl 
 3. if wsl isn't installed run this command: wsl --install -d Ubuntu
 4. inside ubuntu terminal run: sudo apt update (refreshes Ubuntu's list of available software packages and their latest versions), sudo apt install nasm
+5. nasm -f elf64 hello.asm -o hello.o && ld hello.o -o hello && ./hello
 
 # Day 1
 

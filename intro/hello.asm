@@ -1,6 +1,6 @@
 ; Hello World in Assembly (Pure System Calls)
 section .data
-    msg db 'Hello, World!', 10, 0
+    msg db 'Hello, Ahmed!', 10, 0
     msg_len equ $ - msg - 1
 
 section .text
@@ -12,9 +12,7 @@ _start:
     mov rdi, 1          ; stdout
     mov rsi, msg        ; message
     mov rdx, msg_len    ; message length
-    syscall
-    
-    ; exit system call
+    syscall             ; exit system call
     mov rax, 60         ; sys_exit
     mov rdi, 0          ; exit status
     syscall
